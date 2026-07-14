@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediMap - Smart Nearby Medicine Finder</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="#">
+<i class="fa-solid fa-kit-medical"></i>
+MediMap
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse"
+id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link active" href="#">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="search.html">Search</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="nearby.html">Nearby</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="login.html">Login</a>
+</li>
+
+<li class="nav-item">
+<a class="btn btn-light ms-2"
+href="register.html">
+Register
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<h1 class="display-4 fw-bold">
+
+Find Medicines
+
+<span class="text-primary">
+
+Near You
+
+</span>
+
+</h1>
+
+<p class="lead mt-4">
+
+Search thousands of medicines and instantly discover
+the nearest pharmacy that has them in stock.
+
+</p>
+
+<div class="search-box shadow">
+
+<div class="input-group">
+
+<input
+type="text"
+class="form-control form-control-lg"
+placeholder="Search Medicine...">
+
+<button class="btn btn-primary btn-lg">
+
+<i class="fa fa-search"></i>
+
+Search
+
+</button>
+
+</div>
+
+</div>
+
+<div class="mt-4">
+
+<a href="search.html"
+class="btn btn-primary btn-lg">
+
+Search Medicines
+
+</a>
+
+<a href="nearby.html"
+class="btn btn-outline-primary btn-lg">
+
+Nearby Pharmacy
+
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6 text-center">
+
+<img
+src="../images/doctor.png"
+class="img-fluid hero-img"
+alt="doctor">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= POPULAR MEDICINES ================= -->
+
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="text-center fw-bold mb-5">
+
+Popular Medicines
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="card medicine-card">
+
+<div class="card-body text-center">
+
+<i class="fa-solid fa-capsules medicine-icon"></i>
+
+<h5>Paracetamol</h5>
+
+<p>Fever & Pain Relief</p>
+
+<button class="btn btn-primary">
+
+View
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card medicine-card">
+
+<div class="card-body text-center">
+
+<i class="fa-solid fa-pills medicine-icon"></i>
+
+<h5>Crocin</h5>
+
+<p>Cold & Fever</p>
+
+<button class="btn btn-primary">
+
+View
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card medicine-card">
+
+<div class="card-body text-center">
+
+<i class="fa-solid fa-tablets medicine-icon"></i>
+
+<h5>Dolo 650</h5>
+
+<p>Body Pain</p>
+
+<button class="btn btn-primary">
+
+View
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card medicine-card">
+
+<div class="card-body text-center">
+
+<i class="fa-solid fa-syringe medicine-icon"></i>
+
+<h5>Cetirizine</h5>
+
+<p>Allergy Relief</p>
+
+<button class="btn btn-primary">
+
+View
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= EMERGENCY ================= -->
+
+<section class="py-5 bg-danger text-white">
+
+<div class="container text-center">
+
+<h2>
+
+🚑 Emergency Medicine Search
+
+</h2>
+
+<p>
+
+Find 24×7 pharmacies around your current location.
+
+</p>
+
+<a href="nearby.html"
+class="btn btn-light btn-lg">
+
+Find Now
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="text-center fw-bold mb-5">
+
+Why Choose MediMap?
+
+</h2>
+
+<div class="row text-center">
+
+<div class="col-md-4">
+
+<i class="fa-solid fa-location-dot fa-3x text-primary"></i>
+
+<h4 class="mt-3">
+
+Nearby Search
+
+</h4>
+
+<p>
+
+Locate pharmacies within seconds.
+
+</p>
+
+</div>
+
+<div class="col-md-4">
+
+<i class="fa-solid fa-clock fa-3x text-success"></i>
+
+<h4 class="mt-3">
+
+Live Availability
+
+</h4>
+
+<p>
+
+Real-time medicine stock updates.
+
+</p>
+
+</div>
+
+<div class="col-md-4">
+
+<i class="fa-solid fa-shield-heart fa-3x text-danger"></i>
+
+<h4 class="mt-3">
+
+Trusted Pharmacies
+
+</h4>
+
+<p>
+
+Verified pharmacy partners.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="bg-light py-5">
+
+<div class="container">
+
+<h2 class="text-center fw-bold mb-5">
+
+How It Works
+
+</h2>
+
+<div class="row text-center">
+
+<div class="col-md-3">
+
+<h1 class="text-primary">1</h1>
+
+<p>Search Medicine</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h1 class="text-primary">2</h1>
+
+<p>Get Nearby Stores</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h1 class="text-primary">3</h1>
+
+<p>Compare Stock</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h1 class="text-primary">4</h1>
+
+<p>Navigate via Maps</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-dark text-white py-4">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-6">
+
+<h4>MediMap</h4>
+
+<p>
+
+Smart Nearby Medicine Finder
+
+</p>
+
+</div>
+
+<div class="col-md-6 text-md-end">
+
+<p>
+
+© 2026 MediMap
+
+</p>
+
+<p>
+
+Built with ❤️ using Spring Boot
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="../javascript/script.js"></script>
+
+</body>
+</html>

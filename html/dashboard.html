@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>User Dashboard | MediMap</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="../css/style.css">
+
+<link rel="stylesheet"
+href="../css/dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="d-flex">
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<h3>
+
+💊 MediMap
+
+</h3>
+
+</div>
+
+<ul>
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa fa-home"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="search.html">
+
+<i class="fa fa-search"></i>
+
+Search Medicines
+
+</a>
+
+</li>
+
+<li>
+
+<a href="nearby.html">
+
+<i class="fa fa-location-dot"></i>
+
+Nearby Pharmacy
+
+</a>
+
+</li>
+
+<li>
+
+<a href="notifications.html">
+
+<i class="fa fa-bell"></i>
+
+Notifications
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#">
+
+<i class="fa fa-heart"></i>
+
+Favorites
+
+</a>
+
+</li>
+
+<li>
+
+<a href="login.html">
+
+<i class="fa fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-content">
+
+<nav class="navbar navbar-light bg-white shadow-sm px-4">
+
+<h4>
+
+Welcome,
+
+<span id="userName">
+
+Manish
+
+</span>
+
+</h4>
+
+<img
+
+src="../images/profile.png"
+
+class="profile"
+
+>
+
+</nav>
+
+<!-- Statistics -->
+
+<div class="container-fluid mt-4">
+
+<div class="row">
+
+<div class="col-lg-3">
+
+<div class="card dashboard-card">
+
+<div class="card-body">
+
+<h6>
+
+Total Searches
+
+</h6>
+
+<h2>
+
+25
+
+</h2>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="card dashboard-card">
+
+<div class="card-body">
+
+<h6>
+
+Favorites
+
+</h6>
+
+<h2>
+
+12
+
+</h2>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="card dashboard-card">
+
+<div class="card-body">
+
+<h6>
+
+Nearby Stores
+
+</h6>
+
+<h2>
+
+18
+
+</h2>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="card dashboard-card">
+
+<div class="card-body">
+
+<h6>
+
+Notifications
+
+</h6>
+
+<h2>
+
+7
+
+</h2>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Recent Searches -->
+
+<div class="row mt-4">
+
+<div class="col-lg-8">
+
+<div class="card">
+
+<div class="card-header">
+
+Recent Searches
+
+</div>
+
+<div class="card-body">
+
+<table class="table">
+
+<thead>
+
+<tr>
+
+<th>
+
+Medicine
+
+</th>
+
+<th>
+
+Date
+
+</th>
+
+<th>
+
+Status
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+Paracetamol
+
+</td>
+
+<td>
+
+Today
+
+</td>
+
+<td>
+
+<span class="badge bg-success">
+
+Available
+
+</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Crocin
+
+</td>
+
+<td>
+
+Yesterday
+
+</td>
+
+<td>
+
+<span class="badge bg-warning">
+
+Low Stock
+
+</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Dolo 650
+
+</td>
+
+<td>
+
+2 Days Ago
+
+</td>
+
+<td>
+
+<span class="badge bg-danger">
+
+Unavailable
+
+</span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Quick Actions -->
+
+<div class="col-lg-4">
+
+<div class="card">
+
+<div class="card-header">
+
+Quick Actions
+
+</div>
+
+<div class="card-body d-grid gap-3">
+
+<a
+
+href="search.html"
+
+class="btn btn-primary">
+
+Search Medicine
+
+</a>
+
+<a
+
+href="nearby.html"
+
+class="btn btn-success">
+
+Nearby Pharmacy
+
+</a>
+
+<a
+
+href="notifications.html"
+
+class="btn btn-warning">
+
+Notifications
+
+</a>
+
+<a
+
+href="medicine-details.html"
+
+class="btn btn-info">
+
+Medicine Details
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Favorite Medicines -->
+
+<div class="row mt-4">
+
+<div class="col-lg-12">
+
+<div class="card">
+
+<div class="card-header">
+
+Favorite Medicines
+
+</div>
+
+<div class="card-body">
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="card medicine-card">
+
+<div class="card-body text-center">
+
+<h5>
+
+Paracetamol
+
+</h5>
+
+<p>
+
+₹25
+
+</p>
+
+<button
+
+class="btn btn-primary">
+
+View
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card medicine-card">
+
+<div class="card-body text-center">
+
+<h5>
+
+Crocin
+
+</h5>
+
+<p>
+
+₹35
+
+</p>
+
+<button
+
+class="btn btn-primary">
+
+View
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card medicine-card">
+
+<div class="card-body text-center">
+
+<h5>
+
+Vitamin C
+
+</h5>
+
+<p>
+
+₹120
+
+</p>
+
+<button
+
+class="btn btn-primary">
+
+View
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="../javascript/app.js"></script>
+
+<script src="../javascript/dashboard.js"></script>
+
+</body>
+
+</html>

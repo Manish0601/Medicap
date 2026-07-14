@@ -1,0 +1,421 @@
+/* ==========================================
+        MEDIMAP RESPONSIVE.CSS
+========================================== */
+
+/* ==========================
+      LARGE LAPTOP
+========================== */
+
+@media (max-width:1200px){
+
+.hero h1{
+
+    font-size:48px;
+
+}
+
+.hero-img{
+
+    max-width:450px;
+
+}
+
+.dashboard-card h2{
+
+    font-size:28px;
+
+}
+
+}
+
+/* ==========================
+        TABLET
+========================== */
+
+@media (max-width:992px){
+
+/* Sidebar */
+
+.sidebar{
+
+    left:-260px;
+
+    z-index:999;
+
+}
+
+.sidebar.active{
+
+    left:0;
+
+}
+
+/* Main */
+
+.main-content{
+
+    margin-left:0;
+
+    width:100%;
+
+}
+
+/* Hero */
+
+.hero{
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+.hero-img{
+
+    margin-top:40px;
+
+}
+
+/* Navbar */
+
+.navbar-brand{
+
+    font-size:24px;
+
+}
+
+/* Dashboard */
+
+.dashboard-card{
+
+    margin-bottom:20px;
+
+}
+
+/* Cards */
+
+.card{
+
+    margin-bottom:20px;
+
+}
+
+/* Search */
+
+.search-box{
+
+    margin-top:30px;
+
+}
+
+}
+
+/* ==========================
+        MOBILE
+========================== */
+
+@media (max-width:768px){
+
+.hero h1{
+
+    font-size:36px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.display-4{
+
+    font-size:34px;
+
+}
+
+.btn-lg{
+
+    width:100%;
+
+    margin-bottom:10px;
+
+}
+
+.profile{
+
+    width:42px;
+
+    height:42px;
+
+}
+
+/* Tables */
+
+.table{
+
+    display:block;
+
+    overflow-x:auto;
+
+}
+
+/* Map */
+
+#map{
+
+    height:350px;
+
+}
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+
+}
+
+}
+
+/* ==========================
+      SMALL MOBILE
+========================== */
+
+@media (max-width:576px){
+
+.container{
+
+    padding-left:15px;
+
+    padding-right:15px;
+
+}
+
+.hero{
+
+    min-height:auto;
+
+}
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero-img{
+
+    max-width:300px;
+
+}
+
+/* Dashboard Cards */
+
+.dashboard-card h2{
+
+    font-size:24px;
+
+}
+
+.dashboard-card h6{
+
+    font-size:14px;
+
+}
+
+/* Sidebar */
+
+.logo h3{
+
+    font-size:20px;
+
+}
+
+/* Buttons */
+
+.btn{
+
+    font-size:14px;
+
+}
+
+/* Medicine Cards */
+
+.medicine-card{
+
+    margin-bottom:20px;
+
+}
+
+/* Notification */
+
+.notification{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+/* Forms */
+
+.form-control{
+
+    font-size:14px;
+
+}
+
+}
+
+/* ==========================
+      EXTRA SMALL
+========================== */
+
+@media (max-width:400px){
+
+.hero h1{
+
+    font-size:26px;
+
+}
+
+.navbar-brand{
+
+    font-size:20px;
+
+}
+
+.dashboard-card{
+
+    padding:10px;
+
+}
+
+.dashboard-card h2{
+
+    font-size:22px;
+
+}
+
+.card-header{
+
+    font-size:15px;
+
+}
+
+.btn{
+
+    padding:10px;
+
+}
+
+}
+
+/* ==========================
+    LANDSCAPE MOBILE
+========================== */
+
+@media (max-height:500px){
+
+.hero{
+
+    min-height:auto;
+
+    padding:40px;
+
+}
+
+}
+
+/* ==========================
+     IMAGE RESPONSIVE
+========================== */
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ==========================
+      FLEX HELPERS
+========================== */
+
+.flex-wrap-mobile{
+
+    display:flex;
+
+}
+
+@media(max-width:768px){
+
+.flex-wrap-mobile{
+
+    flex-direction:column;
+
+}
+
+}
+
+/* ==========================
+      HIDE ELEMENTS
+========================== */
+
+.hide-mobile{
+
+    display:block;
+
+}
+
+@media(max-width:768px){
+
+.hide-mobile{
+
+    display:none;
+
+}
+
+}
+
+.show-mobile{
+
+    display:none;
+
+}
+
+@media(max-width:768px){
+
+.show-mobile{
+
+    display:block;
+
+}
+
+}
+
+/* ==========================
+      RESPONSIVE TABLE
+========================== */
+
+.table-responsive{
+
+    overflow-x:auto;
+
+}
+
+/* ==========================
+      MAP HEIGHT
+========================== */
+
+@media(max-width:768px){
+
+#map{
+
+    height:300px;
+
+}
+
+}

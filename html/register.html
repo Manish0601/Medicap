@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | MediMap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="bg-light">
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <div class="container">
+
+            <a href="index.html" class="navbar-brand fw-bold">
+
+                <i class="fa-solid fa-kit-medical"></i>
+
+                MediMap
+
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- Register Section -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-6">
+
+                    <div class="login-card">
+
+                        <div class="text-center mb-4">
+
+                            <i class="fa-solid fa-user-plus fa-5x text-primary"></i>
+
+                            <h2 class="fw-bold mt-3">
+
+                                Create Account
+
+                            </h2>
+
+                            <p class="text-muted">
+
+                                Join MediMap today
+
+                            </p>
+
+                        </div>
+
+                        <form id="registerForm">
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Full Name
+
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    class="form-control"
+                                    placeholder="Enter Full Name"
+                                    required>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Email
+
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="form-control"
+                                    placeholder="Enter Email"
+                                    required>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Mobile Number
+
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    class="form-control"
+                                    placeholder="Enter Mobile Number"
+                                    required>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Register As
+
+                                </label>
+
+                                <select id="role"
+                                    class="form-select">
+
+                                    <option value="USER">
+
+                                        User
+
+                                    </option>
+
+                                    <option value="PHARMACY">
+
+                                        Pharmacy
+
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Password
+
+                                </label>
+
+                                <div class="input-group">
+
+                                    <input
+                                        type="password"
+                                        id="password"
+                                        class="form-control"
+                                        placeholder="Password"
+                                        required>
+
+                                    <button
+                                        class="btn btn-outline-secondary"
+                                        type="button"
+                                        id="togglePassword">
+
+                                        <i class="fa-solid fa-eye"></i>
+
+                                    </button>
+
+                                </div>
+
+                                <div class="progress mt-2">
+
+                                    <div
+                                        id="strengthBar"
+                                        class="progress-bar bg-danger"
+                                        style="width:0%">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+
+                                    Confirm Password
+
+                                </label>
+
+                                <input
+                                    type="password"
+                                    id="confirmPassword"
+                                    class="form-control"
+                                    placeholder="Confirm Password"
+                                    required>
+
+                            </div>
+
+                            <button
+                                class="btn btn-primary w-100">
+
+                                <i class="fa-solid fa-user-check"></i>
+
+                                Register
+
+                            </button>
+
+                        </form>
+
+                        <hr>
+
+                        <div class="text-center">
+
+                            Already have an account?
+
+                            <a href="login.html">
+
+                                Login
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="../javascript/app.js"></script>
+
+    <script src="../javascript/auth.js"></script>
+
+    <script>
+
+        const password = document.getElementById("password");
+
+        const bar = document.getElementById("strengthBar");
+
+        password.addEventListener("keyup", () => {
+
+            let strength = password.value.length;
+
+            if (strength < 5) {
+
+                bar.style.width = "25%";
+
+                bar.className = "progress-bar bg-danger";
+
+            }
+
+            else if (strength < 8) {
+
+                bar.style.width = "60%";
+
+                bar.className = "progress-bar bg-warning";
+
+            }
+
+            else {
+
+                bar.style.width = "100%";
+
+                bar.className = "progress-bar bg-success";
+
+            }
+
+        });
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
